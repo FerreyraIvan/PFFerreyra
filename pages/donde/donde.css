@@ -155,17 +155,12 @@ nav ul li a:hover::after {
 }
 /* footer */
 footer {
-  background: linear-gradient(
-    to top,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 20%,
-    #3c26088b 50%,
-    rgba(60, 33, 3, 0.871) 100%
-  );
+  background: rgb(15, 16, 34);
   height: auto;
   width: 100vw;
   padding-top: 20px;
   color: #fff;
+  margin-top: 2px;
 }
 .footer-content {
   display: flex;
@@ -206,17 +201,17 @@ footer {
     to top,
     rgba(0, 0, 0, 0.892),
     rgba(0, 0, 0, 0.656)
-  );
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-bottom p {
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-}
+    );
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: 0.4;
+  }

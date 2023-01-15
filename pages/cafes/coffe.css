@@ -334,7 +334,7 @@ footer {
 
 @media screen and (min-width: 420px) and (max-width: 576px) {
   header {
-    height: 20vh;
+    height: 22vh;
     width: 100vw;
   }
   .logo {

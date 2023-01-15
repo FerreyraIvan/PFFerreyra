@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+body {
+  background-image: url(./imgs/background1.png);
+  background-position: cover;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  height: 10vh;
+
+  padding: 2% 0px 0px 10%;
+}
+.logo {
+  margin-right: auto;
+  padding: 0;
+
+  height: 125px;
+  width: 125px;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  margin-right: 10vh;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0px 30px;
+  margin-top: 50px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: -60px;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width 0.3s;
+}
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+/* MAPS */
+.dioniso {
+  display: flex;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.6);
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: auto;
+  height: 50vh;
+}
+.dioimg img {
+  width: 50vw;
+  max-height: 50vh;
+  margin-left: 00px;
+}
+.diocard {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  width: auto;
+  font-size: 40px;
+  padding: 20px 60px;
+  text-align: center;
+  z-index: 3;
+}
+.diocard h2 {
+  font-family: "Great Vibes", cursive;
+  color: #c49b63;
+  font-weight: 100;
+}
+.diocard h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -10px;
+}
+.diocard p {
+  color: rgb(226, 225, 225);
+  font-size: 15px;
+  font-weight: 100;
+}
+.diomap iframe {
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+  right: -10px;
+  z-index: 2;
+}
+.carser {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: auto;
+  height: 50vh;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.6);
+}
+.csimg img {
+  width: 50vw;
+  max-height: 50vh;
+  
+}
+.cscard {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 27%;
+  top: 75%;
+  width: auto;
+  font-size: 40px;
+  padding: 20px 150px;
+  text-align: center;
+}
+.cscard h2 {
+  font-family: "Great Vibes", cursive;
+  color: #c49b63;
+  font-weight: 100;
+}
+.cscard h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 4px;
+  line-height: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+  top: -20px;
+}
+.cscard p {
+  color: rgb(226, 225, 225);
+  font-size: 15px;
+  font-weight: 100;
+}
+.csmap iframe {
+  height: 50vh;
+  width: 50vw;
+}
+/* footer */
+footer {
+  background: linear-gradient(
+    to top,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 20%,
+    #3c26088b 50%,
+    rgba(60, 33, 3, 0.871) 100%
+  );
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: rgb(61, 61, 61);
+}
+
+.footer-bottom {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.892),
+    rgba(0, 0, 0, 0.656)
+  );
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+}

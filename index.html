@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dioniso CAFE</title>
+    <link rel="shortcut icon" href="imgs/dioniso.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <img src="./imgs/dionisologoblanco.svg" data-aos="fade-right"
+          data-aos-easing="linear"
+          data-aos-duration="1000" class="logo" alt="" />
+          <ul data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1000">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a  href="./pages/about/about.html"  >Sobre nosotros</a></li>
+          <li><a href="./pages/cafes/coffe.html" >Nuestros Cafes</a></li>
+          <li><a href="pages/contacto/contact.html">Contacto</a></li>
+          <li><a href="pages/donde/donde.html">Donde estamos?</a></li>
+          
+          </ul>
+          
+        </nav>
+        <div class="text-box">
+            <p>Bienvenidos a</p>
+            <H1>Dioniso <br> Cafe<h1>
+            <h3>Welcome coffee lovers to PARADISE</h3>
+            <div class="row">
+            <a href="https://toteat.app/r/ar/Dioniso-Cafe-Pasteleria/5307/checkin/menu">Mira nuestro MENU</a>
+            <a href="https://www.pedidosya.com.ar/restaurantes/mar-del-plata/dioniso-cafe-pasteleria-129e283e-1048-48c6-ad44-63c0941c02ba-menu?search=dioniso">PedidosYa</a>
+           </div>
+           
+        </div>
+        <div class="social-icons">
+          <a href="http://instagram.com/dionisocafe" target="_blank" rel="noopener noreferrer"><img src="./imgs/instagramlogo.svg" ></a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./imgs/whatsapp.png" ></a>
+          <a href="https://www.pedidosya.com.ar/restaurantes/mar-del-plata/dioniso-cafe-pasteleria-129e283e-1048-48c6-ad44-63c0941c02ba-menu?search=dioniso"  target="_blank" rel="noopener noreferrer"><img id="pedya" src="./imgs/pedidosyalogo.png" ></a>
+         </div>
+
+      </div>
+    </header>
+
+    <!-- TERMINO HEADER -->
+    <main>
+
+
+      <!-- Paneles -->
+      <section class="paneles" id="section1">
+       
+           <video class="back-vid" autoplay loop muted plays-inline >
+            <source  src="./imgs/coffewallp.mp4">
+          </video> 
+        
+        <div class="card panel-desayuno">
+          <img src="./imgs/desayuno.png" class="img-desayuno imagenes" alt="" />
+
+          <div class="info">
+            <h2 class="h2-desayuno">Desayunos</h2>
+            <a
+              href="https://toteat.app/r/ar/Dioniso-Cafe-Pasteleria/5307/checkin/menu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >Ver Desayunos</a
+            >
+          </div>
+        </div>
+        <div class="card panel-pasteleria">
+          <img
+            src="./imgs/torta.png"
+            alt="pasteleria - pasteles - tortas"
+            class="img-pasteleria imagenes"
+          />
+          <div class="info">
+            <h2 class="h2-pasteleria">Pasteleria</h2>
+            <a
+              href="https://toteat.app/r/ar/Dioniso-Cafe-Pasteleria/5307/checkin/menu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >Ver Pasteleria</a
+            >
+          </div>
+        </div>
+        <div class="card panel-panaderia">
+          <img
+            src="./imgs/pan.png"
+            alt="Productos panificados - panaderia - pan"
+            class="img-panaderia imagenes"
+          />
+          <div class="info">
+            <h2 class="h2-panaderia">Panaderia</h2>
+            <a
+              href="https://toteat.app/r/ar/Dioniso-Cafe-Pasteleria/5307/checkin/menu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >Ver Panificados</a
+            >
+          </div>
+        </div>
+       
+      </section>
+
+      
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Seguinos en INSTAGRAM</h3>
+        <ul class="socials">
+          <li>
+            <a href="http://instagram.com/dionisocafe" target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyright &copy;2022 Dioniso Cafe - Pasteleria</p>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>

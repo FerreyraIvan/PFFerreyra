@@ -135,15 +135,10 @@ form textarea {
     margin-bottom: 3rem;
   }
 }
+
 /* footer */
 footer {
-  background: linear-gradient(
-    to top,
-    rgb(0, 0, 0) 0%,
-    rgb(0, 0, 0) 20%,
-    #3c26088b 50%,
-    rgba(60, 33, 3, 0.871) 100%
-    );
+  background: rgb(15, 16, 34);
   height: auto;
   width: 100vw;
   padding-top: 20px;

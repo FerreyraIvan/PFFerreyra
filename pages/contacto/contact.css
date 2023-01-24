@@ -203,7 +203,117 @@ footer {
     opacity: 0.4;
   }
   
-  @media (max-width: 1000px) {
+  /* media */
+
+  @media screen and (max-width: 576px) {
+    header{
+      height: 25vh;
+    }
+  
+    nav ul {
+      width: 100%;
+      position: absolute;
+      top: 140px;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      display: block;
+      margin: 4px 0px;
+      margin-bottom: 25px;
+      padding: 5px 10px;
+    }
+    .logo {
+      width: 25vh;
+    }
+    .logodioniso{
+      display: none;
+      
+    }
+    .contact form input, form textarea{
+       width: 96%;
+    }
+  }
+  @media screen and (min-width: 576px ) and (max-width:768px){
+    header{
+      height: 20vh;
+    }
+  
+    nav ul {
+      width: 100%;
+      position: absolute;
+      top: 140px;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      display: block;
+      margin: 4px 0px;
+      margin-bottom: 25px;
+      padding: 5px 20px;
+    }
+    .logo {
+      width: 25vh;
+    }
+    .logodioniso{
+      display: none;
+      
+    }
+    .contact form input, form textarea{
+       width: 96%;
+    }
+    .contact h1 p {
+      margin-right: 10px;
+    }
+
+
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+      height: 15vh;
+    }
+   
+    nav ul {
+      width: 100%;
+      font-size: 16px;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      
+    }
+    nav ul li {
+      
+      margin-top: 60px;
+      margin-right: 10px;
+      font-size: 1.1em;
+      padding: 30px;
+  
+      
+    }
+  
+    .logo {
+      width: 19vh;
+      margin-top: 10px;
+    }
+    .logodioniso{
+      display: none;
+    }
+    
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 992px) {
     .contact-container {
       grid-template-columns: 1fr;
     }
@@ -216,5 +326,19 @@ footer {
       height: auto;
       text-align: center;
       margin-bottom: 30px;
+    }
+  }
+
+
+  @media (max-width: 1570px) {
+    section {
+      padding: 80px 3%;
+      transition: 0.2s;
+    }
+    .contact h1 {
+      font-size: 60px;
+    }
+    .contact p {
+      margin-bottom: 3rem;
     }
   }

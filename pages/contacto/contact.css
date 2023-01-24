@@ -16,7 +16,7 @@ header {
   align-items: center;
 
   width: 100%;
-  height: 10vh;
+  height: 20vh;
 
   padding: 2% 0px 0px 10%;
 }
@@ -86,6 +86,12 @@ section {
   font-size: 1.1rem;
   margin-bottom: 3.8rem;
 }
+.contact p:hover{
+  font-size: 1.2rem;
+  color: #000;
+  
+}
+
 .contact form {
   position: relative;
 }
@@ -123,19 +129,6 @@ form textarea {
   background: transparent;
   transform: scale(1.1);
 }
-@media (max-width: 1570px) {
-  section {
-    padding: 80px 3%;
-    transition: 0.2s;
-  }
-  .contact h1 {
-    font-size: 60px;
-  }
-  .contact p {
-    margin-bottom: 3rem;
-  }
-}
-
 /* footer */
 footer {
   background: rgb(15, 16, 34);
@@ -197,14 +190,16 @@ footer {
     text-transform: uppercase;
     opacity: 0.4;
   }
-  
-  /* media */
-
   @media screen and (max-width: 576px) {
     header{
       height: 25vh;
     }
-  
+    .logo{
+      width: 25vh;
+     position: relative;
+     top: -30px;
+     right: 30px;
+    }
     nav ul {
       width: 100%;
       position: absolute;
@@ -221,9 +216,7 @@ footer {
       margin-bottom: 25px;
       padding: 5px 10px;
     }
-    .logo {
-      width: 25vh;
-    }
+
     .logodioniso{
       display: none;
       
@@ -253,8 +246,11 @@ footer {
       margin-bottom: 25px;
       padding: 5px 20px;
     }
-    .logo {
+    .logo{
       width: 25vh;
+     position: relative;
+     top: -30px;
+     right: 30px;
     }
     .logodioniso{
       display: none;
@@ -294,18 +290,13 @@ footer {
   
     .logo {
       width: 19vh;
-      margin-top: 10px;
+      margin-top: 50px;
     }
     .logodioniso{
       display: none;
     }
     
   }
-  
-
-
-
-
 
 
   @media (max-width: 992px) {

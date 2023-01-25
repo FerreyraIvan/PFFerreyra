@@ -56,6 +56,11 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 50%;
 }
+
+/* main */
+main{
+  max-height: 880px;
+}
 section {
   padding: 40px 15%;
 }
@@ -200,7 +205,9 @@ footer {
      top: -30px;
      right: 30px;
     }
+    
     nav ul {
+      margin-top: 40px;
       width: 100%;
       position: absolute;
       top: 140px;
@@ -216,7 +223,9 @@ footer {
       margin-bottom: 25px;
       padding: 5px 10px;
     }
-
+    main{
+      max-height: 860px;
+    }
     .logodioniso{
       display: none;
       
@@ -224,6 +233,7 @@ footer {
     .contact form input, form textarea{
        width: 96%;
     }
+
   }
   @media screen and (min-width: 576px ) and (max-width:768px){
     header{

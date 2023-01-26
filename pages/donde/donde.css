@@ -364,4 +364,14 @@ footer {
   header {
     margin-top: 20px;
   }
+  .dioimg img{
+    height: 50vh;
+    object-fit: cover;
+    object-position: bottom left;
+  }
+  .csimg img{
+    height: 50vh;
+    object-fit: cover;
+    
+  }
 }

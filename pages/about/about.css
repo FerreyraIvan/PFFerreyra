@@ -320,15 +320,21 @@ footer {
        height: 30vh;
        font-size: 80%;
    }
+  
    .about-h2{
     font-size: 250%;
     display: flex;
     justify-content: flex-start;
     margin-left: 20%;
    }
+   .about-contenido-h3-p{
+    margin-left: 10px;
+   }
    .about-contenido-h3-p h3{
     font-size: 4em;
+    
    }
+   
    .about-img img{
     height: 36vh;
     margin: 0;
@@ -363,6 +369,9 @@ footer {
    }
    .about-h2{
     font-size: 350%;
+   }
+   .about-contenido-h3-p{
+    margin-left: 10px;
    }
    .about-contenido-h3-p h3{
     font-size: 4em;

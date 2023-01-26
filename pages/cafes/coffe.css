@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
+  
   width: 100%;
   height: 10vh;
 
@@ -21,7 +21,7 @@ header {
 .logo {
   margin-right: auto;
   padding: 0;
-
+  margin-top: 10px;
   height: 125px;
   width: 125px;
   cursor: pointer;
@@ -340,7 +340,7 @@ footer {
   .logo {
     position: absolute;
     top: 10px;
-    right: 50%;
+    right: 70%;
   }
   nav ul {
     width: 100%;
@@ -427,7 +427,7 @@ footer {
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   header {
-    height: 20vh;
+    height: 22vh;
     width: 100vw;
   }
   .logo {
@@ -458,7 +458,7 @@ footer {
     grid-template-rows: 1.5fr 3fr 3fr;
     justify-items: center;
     align-items: center;
-    height: 80vh;
+    height: 85vh;
   }
   .nuestros-cafes {
     position: relative;
@@ -493,11 +493,11 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    left: -30px;
+    left: -40px;
   }
   .eurocafe a img {
     width: 50vw;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
     padding: 20px;
   }
 
@@ -518,10 +518,105 @@ footer {
   .grano2 {
     display: none;
   }
+  
 }
 
-/* 1200 */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width:768px) and (max-width: 996px){
+  header {
+    height: 20vh;
+    width: 100vw;
+  }
+  .logo {
+    position: relative;
+    top: -20px;
+  }
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    padding: 15px 40px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  main {
+    display: grid;
+    grid-template-areas:
+      "cafes cafes"
+      "eurocafe eurocafe"
+      "pilao pilao";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 3fr 3fr;
+    justify-items: center;
+    align-items: center;
+    height: 85vh;
+  }
+  .nuestros-cafes {
+    position: relative;
+    grid-area: cafes;
+    margin: 40px;
+  }
+  .nuestros-cafes h2 {
+    font-size: 400%;
+    animation: cafes 5s ease infinite;
+    letter-spacing: 6px;
+  }
+  @keyframes cafes {
+    0% {
+      text-shadow: 0 0 10px rgb(37, 12, 1);
+      color: #000;
+    }
+
+    100% {
+      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
+        0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1),
+        0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
+
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .eurocafe {
+    display: block;
+    grid-area: eurocafe;
+  }
+  .eurocafe a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -50px;
+  }
+  .eurocafe a img {
+    width: 50vw;
+    margin-bottom: 120px;
+    padding: 20px;
+  }
+
+  .grano1 {
+    display: none;
+  }
+  .pilao {
+    grid-area: pilao;
+  }
+
+  .pilao a img {
+    width: 50vw;
+    height: 150px;
+    margin-bottom: 40px;
+    position: relative;
+    top: -220px;
+  }
+  .grano2 {
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 996px) and (max-width: 1200px) {
   
   nav {
     margin-top: 20px;

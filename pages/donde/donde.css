@@ -216,7 +216,6 @@ footer {
 @media screen and (max-width: 576px) {
   header {
     height: 30vh;
-    width: 100vw;
   }
   .logo {
     width: 25vh;

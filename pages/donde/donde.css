@@ -68,7 +68,6 @@ nav ul li a:hover::after {
 .dioimg img {
   width: 50vw;
   max-height: 50vh;
-  margin-left: 00px;
 }
 .diocard {
   background: rgba(0, 0, 0, 0.7);
@@ -118,7 +117,6 @@ nav ul li a:hover::after {
 .csimg img {
   width: 50vw;
   max-height: 50vh;
-  
 }
 .cscard {
   background: rgba(0, 0, 0, 0.7);
@@ -201,17 +199,169 @@ footer {
     to top,
     rgba(0, 0, 0, 0.892),
     rgba(0, 0, 0, 0.656)
-    );
+  );
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+@media screen and (max-width: 576px) {
+  header {
+    height: 30vh;
     width: 100vw;
-    padding: 20px 0;
-    text-align: center;
   }
-  .footer-bottom p {
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
+  .logo {
+    width: 25vh;
+    position: absolute;
+    top: 5px;
+    left: 0px;
   }
-  .footer-bottom span {
-    text-transform: uppercase;
-    opacity: 0.4;
+  nav {
+    position: relative;
+    top: 60px;
+    display: flex;
+
+    margin-top: 20px;
+    width: 100vw;
   }
+  nav ul {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+  }
+  nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 50px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+  .dioniso {
+    height: auto;
+    width: 100vw;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+  .diocard {
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 15px 50px;
+  }
+  .diocard h2 {
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+  .diocard h3 {
+    font-size: 16px;
+  }
+  .dioimg img {
+    display: none;
+  }
+  .diomap iframe {
+    width: 95vw;
+    right: -10px;
+    margin-top: 2px;
+    padding: 12px 0;
+  }
+
+  .carser {
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 4px;
+  }
+
+  .csimg img {
+    display: none;
+  }
+  .cscard {
+    position: relative;
+    height: 30vh;
+    padding: 15px 50px;
+    left: 0;
+    top: 0;
+  }
+  .cscard h3 {
+    font-size: 16px;
+    top: 0px;
+    margin-bottom: 20px;
+  }
+  .csmap iframe {
+    width: 95vw;
+    padding: 12px 0;
+    margin-top: 2px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+  header {
+    height: 20vh;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 120px;
+  }
+
+  .dioniso {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .dioimg img {
+    display: none;
+  }
+
+  .diocard {
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .diomap iframe {
+    width: 100vw;
+    right: 0;
+  }
+
+  .carser {
+    flex-direction: column;
+    height: 75vh;
+    justify-content: flex-start;
+    margin-top: 2px;
+  }
+  .csimg img {
+    display: none;
+    width: 100vw;
+  }
+
+  .cscard {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .csmap iframe {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+  header {
+    margin-top: 20px;
+  }
+}

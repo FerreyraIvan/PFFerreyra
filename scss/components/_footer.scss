@@ -1,8 +1,6 @@
 
-
 footer{
     background-color: $ft-color;
-    @extend %centrar;
     height: auto;
     width: 100vw;
     padding-top: 20px;
@@ -15,7 +13,6 @@ footer{
             font-weight: 400;
             text-transform: capitalize;
             line-height: 3rem;
-            
         }
     }
     .socials{
@@ -28,7 +25,7 @@ footer{
          a{
             text-decoration: none;
             color: #fff;
-            &:hover{
+            &:hover i{
                 color: rgb(61, 61, 61);
             }
             i{

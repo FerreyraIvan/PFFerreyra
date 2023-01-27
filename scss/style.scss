@@ -11,6 +11,29 @@
 * {
     @extend %reset;
 }
+body {
+  font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  max-width: 100vw;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url(./imgs/background1.png);
+  filter: contrast(1.3) saturate(120%);
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  background-position-x: 0px;
+  background-repeat: no-repeat;
+}
+
 // MAIN
 
   #section1{

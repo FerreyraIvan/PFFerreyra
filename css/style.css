@@ -10,55 +10,6 @@
   box-sizing: border-box;
 }
 
-footer {
-  background-color: rgb(15, 16, 34);
-  height: auto;
-  width: 100vw;
-  padding-top: 20px;
-  color: #fff;
-}
-footer .footer-content {
-  flex-direction: column;
-}
-footer .footer-content h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-footer .socials {
-  list-style: none;
-  margin: 1rem 0 3rem 0;
-}
-footer .socials li {
-  margin: 0 10px;
-}
-footer .socials a {
-  text-decoration: none;
-  color: #fff;
-}
-footer .socials a:hover {
-  color: rgb(61, 61, 61);
-}
-footer .socials a i {
-  font-size: 1.1rem;
-  transition: color 0.4s ease;
-}
-footer .footer-bottom {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.892), rgba(0, 0, 0, 0.656));
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-footer .footer-bottom p {
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-footer .footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-}
 
 nav {
   display: flex;
@@ -276,4 +227,53 @@ nav ul li a:hover::after {
   filter: brightness(0.8) saturate(1.03);
 }
 
+footer {
+  background-color: rgb(15, 16, 34);
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  color: #fff;
+}
+footer .footer-content {
+  flex-direction: column;
+}
+footer .footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+footer .socials {
+  list-style: none;
+  margin: 1rem 0 3rem 0;
+}
+footer .socials li {
+  margin: 0 10px;
+}
+footer .socials a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .socials a:hover {
+  color: rgb(61, 61, 61);
+}
+footer .socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+footer .footer-bottom {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.892), rgba(0, 0, 0, 0.656));
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer .footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+}
 /*# sourceMappingURL=style.css.map */

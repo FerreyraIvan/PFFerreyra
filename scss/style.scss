@@ -1,0 +1,125 @@
+// base
+@import './base/extends';
+@import './base/variables';
+  
+
+// componentes
+@import './components/footer';
+@import './components/nav';
+
+
+* {
+    @extend %reset;
+}
+// MAIN
+
+  #section1{
+    min-height: 100vh;
+    overflow: hidden;
+  }
+.paneles {
+    @extend %centrar;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.back-vid {
+    width: 100%;
+    overflow: hidden;
+  
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 969;
+}
+@media (min-aspect-ratio: 16/9) {
+    .back-vid {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .back-vid {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .card {
+    width: 500px;
+    height: 800px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    margin: 50px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    &:hover{
+        transform: translateY(20px);
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            rgba(54, 55, 55, 0.5),
+            rgb(27, 27, 27)
+            );
+            z-index: 2;
+            transition: 0.5 all;
+            opacity: 0; 
+        }
+        &:hover:before{
+            opacity: 1;
+        }  
+        &:hover .info {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+        .info .btn{
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #fff;
+            font-size: 16px;
+            font-weight: 14px;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            display: inline-block;
+            position: relative;
+            top: 600px;
+            left: 180px;
+            &:hover{
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+                color: rgb(107, 62, 34);
+            }
+        }
+
+  }
+  .imagenes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+
+  .img-pasteleria {
+    filter: brightness(0.8) saturate(1.03);
+  }

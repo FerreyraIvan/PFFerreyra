@@ -25,7 +25,7 @@ header{
   height: 100vh;
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url(./imgs/background1.png);
+    url(../imgs/background1.png);
   filter: contrast(1.3) saturate(120%);
   background-size: cover;
   background-position: center;
@@ -33,6 +33,92 @@ header{
   background-position-x: 0px;
   background-repeat: no-repeat;
 }
+.text-box{
+  color: #fff;
+  position: absolute;
+  bottom: 8%;
+  font-family: "Poppins", sans-serif;
+  p{
+      font-size: 50px;
+      font-weight: 600;
+  }
+  h1{
+      font-size: 15vh;
+      line-height: 160px;
+      margin-left: -10px;
+      color: transparent;
+      font-weight: 300;
+      -webkit-text-stroke: 1px #fff;
+      background: url(../../imgs/back.png);
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: back 20s linear infinite;
+  }
+  h3{
+      font-size: 22px;
+      font-weight: 600;
+  }
+  a{
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-right: 20px;
+      border: #fff solid 2px;
+  }
+  span{
+    color: transparent;
+    background: linear-gradient(
+      #fd004c 16.7%,
+      #fe9000 16.7%,
+      #fe9000 33.4%,
+      #fff020 33.4%,
+      #fff020 50.1%,
+      #3edf4b 50.1%,
+      #3edf4b 66.8%,
+      #3363ff 66.8%,
+      #3363ff 83.5%,
+      #b102b7 83.5%,
+      #b102b7
+    );
+    -webkit-background-clip: text;
+            background-clip: text;
+    line-height: 1.1em;
+    animation: arcoiris 50s linear infinite;
+    font-size: 25px;
+  }
+}
+@keyframes arcoiris{
+  100%{
+    background-position: 0 30em;
+  }
+}
+@keyframes back {
+  100% {
+      background-position: 2000px 0;
+    }
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.social-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 8%;
+  img{
+      width: 25px;
+      display: block;
+      margin: 25px 5px;  
+  }
+}
+#pedya{
+  width: 80px;
+  margin: 25px 1px;
+}
+
 
 // MAIN
 
@@ -145,4 +231,209 @@ header{
 
   .img-pasteleria {
     filter: brightness(0.8) saturate(1.03);
+  }
+
+    /* RESPONSIVE DESIGN */
+  @media screen and (max-width: 576px) {
+    
+
+    nav ul {
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      
+    }
+    nav ul li {
+      display: block;
+      margin: 10px;
+      margin-bottom: 25px;
+      
+    }
+    .logo {
+      width: 15vh;
+    }
+    .text-box p {
+      font-size: 20px;
+    }
+    .text-box h1 {
+      font-size: 65px;
+      line-height: 100px;
+      
+    }
+    .text-box h3 {
+      font-size: 20px;
+      display: none;
+    }
+    .row {
+      font-size: 10px;
+    }
+    .social-icons {
+      display: none;
+    }
+    .back-vid {
+      position: absolute;
+      top: 857;
+      height: 1800px;
+      
+
+    }
+    .card {
+      height: 500px;
+      width: 400px;
+    }
+    .card .info .btn {
+      top: 350px;
+      left: 0px;
+    }
+
+    
+  
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    
+    nav ul {
+      width: 100%;
+      position: absolute;
+      top: 40px;
+      right: 0;
+    }
+    nav ul li {
+      display: block;
+      margin: 10px;
+      margin-bottom: 25px;
+      
+      
+    }
+    .logo {
+      width: 15vh;
+      margin-top: 10px;
+    }
+    .text-box p {
+      font-size: 20px;
+    }
+    .text-box h1 {
+      font-size: 65px;
+      line-height: 100px;
+      
+    }
+    .text-box h3 {
+      font-size: 20px;
+      display: none;
+    }
+    .row {
+      font-size: 10px;
+    }
+    .social-icons {
+      display: none;
+    }
+    .back-vid {
+      position: absolute;
+      top: 792px;
+      height: 1800px;
+
+    }
+    .card {
+      height: 500px;
+      width: 400px;
+    }
+    .card .info .btn {
+      top: 350px;
+      left: 10px;
+    }
+
+  }
+  
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+   
+    nav ul {
+      width: 100%;
+      font-size: 16px;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      
+    }
+    nav ul li {
+      
+      margin-bottom: 30px;
+      margin-right: 20px;
+      font-size: 1.1em;
+  
+      
+    }
+  
+    .logo {
+      width: 19vh;
+      margin-top: 10px;
+    }
+    .text-box p {
+      font-size: 30px;
+      line-height: 80px;
+    }
+    .text-box h1 {
+      font-size: 110px;
+      line-height: 130px;
+    }
+    .text-box h3 {
+      font-size: 23px;
+      line-height: 60px;
+    }
+    .row {
+      font-size: 16px;
+    }
+    .social-icons {
+     display: inline-block;
+     
+     
+    }
+   
+    .back-vid {
+      top: 792px;
+      height: 2400px;
+    }
+    .card {
+      height: 650px;
+      
+    }
+    .card .info .btn {
+      top:500px;
+      
+      font-size: 20px;
+    }
+
+
+
+
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    nav ul{
+      position: relative;
+      left: 60px;
+    }
+    nav ul li{
+      padding: 0;
+      margin:  10px 22px;
+    }
+    .back-vid {
+      
+      height: 2200px;
+    }
+    .card{
+      height: 600px;
+    }
+    .card .info .btn{
+      top: 400px;
+      
+    }
+  }
+  
+  @media screen and (min-width: 1200px) and (max-width: 1440px){
+    .back-vid {
+      top: 852px;
+      height: 2000px;
+    }
   }

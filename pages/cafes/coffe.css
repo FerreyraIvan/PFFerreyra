@@ -151,6 +151,8 @@ h2 span:nth-child(2) {
   border: 1px solid #222;
   padding: 10px;
   border-radius: 12px;
+  background-color: #000;
+  border: #fff 1px solid;
 }
 
 .grano1 {
@@ -160,14 +162,16 @@ h2 span:nth-child(2) {
 .pilao {
   display: flex;
   justify-content: space-around;
+  
 }
 
 .pilao a img {
   width: 300px;
-
+  background-color: #fff;
+  
   order: 1;
   margin-top: 50%;
-  border: 1px solid #222;
+  border: 1px solid #000;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 100px;

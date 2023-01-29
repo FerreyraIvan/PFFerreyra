@@ -84,16 +84,17 @@ section {
   color: #fff;
 }
 .contact p {
-  color: #191919;
-  letter-spacing: 2px;
+  color: #111;
+  letter-spacing: 4px;
   font-weight: 600;
   line-height: 26px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 3.8rem;
+  -webkit-text-stroke: #000 0.5px;
 }
 .contact p:hover{
   font-size: 1.2rem;
-  color: #000;
+  color: #fff;
   
 }
 

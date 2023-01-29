@@ -65,7 +65,12 @@ header{
       padding: 10px 20px;
       margin-right: 20px;
       border: #fff solid 2px;
-  }
+    }
+    @keyframes back {
+      100% {
+          background-position: 2000px 0;
+        }
+    }
   span{
     color: transparent;
     background: linear-gradient(
@@ -92,11 +97,6 @@ header{
   100%{
     background-position: 0 30em;
   }
-}
-@keyframes back {
-  100% {
-      background-position: 2000px 0;
-    }
 }
 .row{
   display: flex;

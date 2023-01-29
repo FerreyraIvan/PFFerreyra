@@ -93,8 +93,10 @@ section {
   -webkit-text-stroke: #000 0.5px;
 }
 .contact p:hover{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #fff;
+  background-color: #000;
+  -webkit-text-stroke: #fff ;
   
 }
 

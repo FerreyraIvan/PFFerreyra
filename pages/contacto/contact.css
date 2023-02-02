@@ -200,11 +200,8 @@ footer {
     opacity: 0.4;
   }
   @media screen and (max-width: 576px) {
-
-
     header{
       height: 25vh;
-      
     }
     .logo{
       width: 25vh;
@@ -278,7 +275,7 @@ footer {
       
     }
     .contact form input, form textarea{
-       width: 96%;
+       width: 200%;
     }
     .contact h1 p {
       margin-right: 10px;

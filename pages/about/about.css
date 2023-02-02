@@ -7,6 +7,7 @@
 body {
   background-image: url(./imgs/background1.png);
   background-image: cover;
+  overflow-x: hidden;
 }
 header {
   display: flex;

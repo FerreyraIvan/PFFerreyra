@@ -8,7 +8,7 @@ body {
   background-image: url(./img/background1.png);
   filter: saturate(150%);
   background-image: cover;
-  
+  overflow-x: hidden;
 }
 header {
   display: flex;

@@ -4,11 +4,13 @@
   box-sizing: border-box;
   font-family: "Bebas Neue", cursive;
 }
+
 body {
   background-image: url(./imgs/background1.png);
   background-position: cover;
-
+  overflow-x: hidden;
 }
+
 header {
   display: flex;
   justify-content: flex-end;
@@ -19,6 +21,7 @@ header {
 
   padding: 2% 0px 0px 10%;
 }
+
 .logo {
   margin-right: auto;
   padding: 0;
@@ -33,17 +36,20 @@ nav ul {
   list-style: none;
   margin-right: 10vh;
 }
+
 nav ul li {
   display: inline-block;
   padding: 0px 30px;
   margin-top: 50px;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
   position: relative;
   top: -60px;
 }
+
 nav ul li a::after {
   content: "";
   width: 0;
@@ -55,6 +61,7 @@ nav ul li a::after {
   background: #fff;
   transition: width 0.3s;
 }
+
 nav ul li a:hover::after {
   width: 50%;
 }
@@ -68,10 +75,12 @@ nav ul li a:hover::after {
   width: auto;
   height: 50vh;
 }
+
 .dioimg img {
   width: 50vw;
   max-height: 50vh;
 }
+
 .diocard {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -83,11 +92,13 @@ nav ul li a:hover::after {
   text-align: center;
   z-index: 3;
 }
+
 .diocard h2 {
   font-family: "Great Vibes", cursive;
   color: #c49b63;
   font-weight: 100;
 }
+
 .diocard h3 {
   color: #fff;
   font-size: 20px;
@@ -97,11 +108,13 @@ nav ul li a:hover::after {
   position: relative;
   top: -10px;
 }
+
 .diocard p {
   color: rgb(226, 225, 225);
   font-size: 15px;
   font-weight: 100;
 }
+
 .diomap iframe {
   height: 50vh;
   width: 50vw;
@@ -109,6 +122,7 @@ nav ul li a:hover::after {
   right: -10px;
   z-index: 2;
 }
+
 .carser {
   display: flex;
   margin-top: 10px;
@@ -117,10 +131,12 @@ nav ul li a:hover::after {
   height: 50vh;
   box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.6);
 }
+
 .csimg img {
   width: 50vw;
   max-height: 50vh;
 }
+
 .cscard {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -131,11 +147,13 @@ nav ul li a:hover::after {
   padding: 20px 150px;
   text-align: center;
 }
+
 .cscard h2 {
   font-family: "Great Vibes", cursive;
   color: #c49b63;
   font-weight: 100;
 }
+
 .cscard h3 {
   color: #fff;
   font-size: 20px;
@@ -145,15 +163,18 @@ nav ul li a:hover::after {
   position: relative;
   top: -20px;
 }
+
 .cscard p {
   color: rgb(226, 225, 225);
   font-size: 15px;
   font-weight: 100;
 }
+
 .csmap iframe {
   height: 50vh;
   width: 50vw;
 }
+
 /* footer */
 footer {
   background: rgb(15, 16, 34);
@@ -163,18 +184,21 @@ footer {
   color: #fff;
   margin-top: 2px;
 }
+
 .footer-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .footer-content h3 {
   font-size: 1.8rem;
   font-weight: 400;
   text-transform: capitalize;
   line-height: 3rem;
 }
+
 .socials {
   list-style: none;
   display: flex;
@@ -182,51 +206,58 @@ footer {
   justify-content: center;
   margin: 1rem 0 3rem 0;
 }
+
 .socials li {
   margin: 0 10px;
 }
+
 .socials a {
   text-decoration: none;
   color: #fff;
 }
+
 .socials a i {
   font-size: 1.1rem;
   transition: color 0.4s ease;
 }
+
 .socials a:hover i {
   color: rgb(61, 61, 61);
 }
 
 .footer-bottom {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.892),
-    rgba(0, 0, 0, 0.656)
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.892),
+      rgba(0, 0, 0, 0.656));
   width: 100vw;
   padding: 20px 0;
   text-align: center;
 }
+
 .footer-bottom p {
   font-size: 14px;
   word-spacing: 2px;
   text-transform: capitalize;
 }
+
 .footer-bottom span {
   text-transform: uppercase;
   opacity: 0.4;
 }
+
 @media screen and (max-width: 576px) {
   header {
     height: 30vh;
     overflow-x: hidden;
   }
+
   .logo {
     width: 25vh;
     position: absolute;
     top: 5px;
     left: 0px;
   }
+
   nav {
     position: relative;
     top: 60px;
@@ -235,6 +266,7 @@ footer {
     margin-top: 20px;
     width: 100vw;
   }
+
   nav ul {
     width: 100%;
     display: flex;
@@ -245,6 +277,7 @@ footer {
 
     flex-direction: column;
   }
+
   nav ul li {
     display: flex;
     flex-wrap: wrap;
@@ -252,6 +285,7 @@ footer {
     margin-bottom: 10px;
     padding: 0px 10px;
   }
+
   .dioniso {
     height: auto;
     width: 100vw;
@@ -259,22 +293,27 @@ footer {
     justify-content: center;
     flex-direction: column;
   }
+
   .diocard {
     position: relative;
     left: 0;
     top: 0;
     padding: 15px 50px;
   }
+
   .diocard h2 {
     font-size: 100%;
     margin-bottom: 20px;
   }
+
   .diocard h3 {
     font-size: 16px;
   }
+
   .dioimg img {
     display: none;
   }
+
   .diomap iframe {
     width: 95vw;
     right: -10px;
@@ -292,6 +331,7 @@ footer {
   .csimg img {
     display: none;
   }
+
   .cscard {
     position: relative;
     height: 30vh;
@@ -299,11 +339,13 @@ footer {
     left: 0;
     top: 0;
   }
+
   .cscard h3 {
     font-size: 16px;
     top: 0px;
     margin-bottom: 20px;
   }
+
   .csmap iframe {
     width: 95vw;
     padding: 12px 0;
@@ -316,6 +358,7 @@ footer {
   header {
     height: 20vh;
   }
+
   nav ul {
     display: flex;
     justify-content: flex-end;
@@ -326,6 +369,7 @@ footer {
     flex-direction: column;
     height: 80vh;
   }
+
   .dioimg img {
     display: none;
   }
@@ -337,6 +381,7 @@ footer {
     left: 0;
     top: 0;
   }
+
   .diomap iframe {
     width: 100vw;
     right: 0;
@@ -348,6 +393,7 @@ footer {
     justify-content: flex-start;
     margin-top: 2px;
   }
+
   .csimg img {
     display: none;
     width: 100vw;
@@ -358,6 +404,7 @@ footer {
     top: 0;
     left: 0;
   }
+
   .csmap iframe {
     width: 100vw;
   }
@@ -367,14 +414,16 @@ footer {
   header {
     margin-top: 20px;
   }
-  .dioimg img{
+
+  .dioimg img {
     height: 50vh;
     object-fit: cover;
     object-position: bottom left;
   }
-  .csimg img{
+
+  .csimg img {
     height: 50vh;
     object-fit: cover;
-    
+
   }
 }

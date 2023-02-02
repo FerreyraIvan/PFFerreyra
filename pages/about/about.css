@@ -137,6 +137,7 @@ nav ul li a:hover::after {
   height: 40vh;
   justify-content: flex-start;
   align-items: center;
+
 }
 .about-contenido-h3-p h3 {
   font-size: 5em;
@@ -230,10 +231,8 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 50px;
-    
-    
   
   }
   nav ul li {
@@ -305,7 +304,7 @@ footer {
    nav ul li {
  
      margin: 0px ;
-     
+     margin-bottom: 20px;
    }
    nav ul li a{
      top: 0;
@@ -319,12 +318,12 @@ footer {
    }
 
    .about-calidad{
-       height: 30vh;
+       height: 20vh;
        font-size: 80%;
    }
   
    .about-h2{
-    font-size: 250%;
+    font-size: 220%;
     display: flex;
     justify-content: flex-start;
     margin-left: 20%;
@@ -333,8 +332,9 @@ footer {
     margin-left: 10px;
    }
    .about-contenido-h3-p h3{
-    font-size: 4em;
-    
+    font-size: 3.5em;
+    margin-top: 10px;
+    margin-bottom: 90px;
    }
    
    .about-img img{

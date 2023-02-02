@@ -6,7 +6,6 @@
 }
 body {
   background-image: url(./img/background1.png);
-  overflow-x: hidden;
 }
 header {
   display: flex;

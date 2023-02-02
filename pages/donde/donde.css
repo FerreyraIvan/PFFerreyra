@@ -27,9 +27,8 @@ header {
   width: 125px;
   cursor: pointer;
 }
-nav{
-  overflow-x: hidden;
-}
+
+
 nav ul {
   list-style: none;
   margin-right: 10vh;

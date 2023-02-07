@@ -1,31 +1,65 @@
+footer .socials, footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bebas Neue", Courier, monospace;
 }
-body {
-  background-image: url(./img/background1.png);
-}
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  
-  width: 100%;
-  height: 10vh;
 
-  padding: 2% 0px 0px 10%;
-  background-color: rgba(0, 0, 0, 0.3);
+footer {
+  background-color: rgb(15, 16, 34);
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  color: #fff;
 }
-.logo {
-  margin-right: auto;
-  padding: 0;
-  margin-top: 10px;
-  height: 125px;
-  width: 125px;
-  cursor: pointer;
+footer .footer-content {
+  flex-direction: column;
 }
+footer .footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+footer .socials {
+  list-style: none;
+  margin: 1rem 0 3rem 0;
+}
+footer .socials li {
+  margin: 0 10px;
+}
+footer .socials a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .socials a:hover i {
+  color: rgb(61, 61, 61);
+}
+footer .socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+footer .footer-bottom {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.892), rgba(0, 0, 0, 0.656));
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+footer .footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
 nav ul {
   list-style: none;
 }
@@ -54,17 +88,44 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 50%;
 }
+
+* {
+  font-family: "Bebas Neue", Courier, monospace;
+}
+
+body {
+  background-image: url(../../../imgs/background1.png);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 2% 0px 0px 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  margin-right: auto;
+  padding: 0;
+  margin-top: 10px;
+  height: 125px;
+  width: 125px;
+  cursor: pointer;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
   align-items: center;
   background-color: rgba(0, 0, 0, 0.656);
 }
+
 .nuestros-cafes {
   display: block;
-
   text-align: center;
   position: absolute;
 }
@@ -73,12 +134,11 @@ main {
   letter-spacing: 15px;
   animation: cafes 5s ease infinite;
 }
-
-h2 span:nth-child(1) {
+.nuestros-cafes h2 span:nth-child(1) {
   animation: abertura 5s linear 1;
   margin-right: 20px;
 }
-h2 span:nth-child(2) {
+.nuestros-cafes h2 span:nth-child(2) {
   animation: abertura2 5s linear 1;
 }
 
@@ -91,12 +151,8 @@ h2 span:nth-child(2) {
   50% {
     font-size: 600%;
   }
-
   100% {
-    text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
-      0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1),
-      0 0 160px rgb(37, 12, 1);
-
+    text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1), 0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
     color: rgb(255, 255, 255);
     font-size: 500%;
   }
@@ -137,7 +193,6 @@ h2 span:nth-child(2) {
     right: 0px;
   }
 }
-
 .eurocafe {
   display: flex;
   flex-wrap: wrap;
@@ -159,16 +214,14 @@ h2 span:nth-child(2) {
   height: 40%;
   width: 40%;
 }
+
 .pilao {
   display: flex;
   justify-content: space-around;
-  
 }
-
 .pilao a img {
   width: 300px;
   background-color: #fff;
-  
   order: 1;
   margin-top: 50%;
   border: 1px solid #000;
@@ -176,72 +229,13 @@ h2 span:nth-child(2) {
   border-radius: 12px;
   margin-bottom: 100px;
 }
+
 .grano2 {
   width: 30%;
   order: 2;
-
   top: -300px;
 }
-footer {
-  background: rgb(15, 16, 34);
-  height: auto;
-  width: 100vw;
-  padding-top: 20px;
-  color: #fff;
-}
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.footer-content h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 3rem;
-}
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-.socials li {
-  margin: 0 10px;
-}
-.socials a {
-  text-decoration: none;
-  color: #fff;
-}
-.socials a i {
-  font-size: 1.1rem;
-  transition: color 0.4s ease;
-}
-.socials a:hover i {
-  color: rgb(61, 61, 61);
-}
-.footer-bottom {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.892),
-    rgba(0, 0, 0, 0.656)
-  );
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-bottom p {
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom span {
-  text-transform: uppercase;
-  opacity: 0.4;
-}
-/* RESPONSIVE */
+
 @media screen and (max-width: 420px) {
   header {
     height: 25vh;
@@ -268,10 +262,7 @@ footer {
   }
   main {
     display: grid;
-    grid-template-areas:
-      "cafes cafes"
-      "eurocafe eurocafe"
-      "pilao pilao";
+    grid-template-areas: "cafes cafes" "eurocafe eurocafe" "pilao pilao";
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 3fr 3fr;
     justify-items: center;
@@ -293,16 +284,11 @@ footer {
       text-shadow: 0 0 10px rgb(37, 12, 1);
       color: #000;
     }
-
     100% {
-      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
-        0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1),
-        0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
-
+      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1), 0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
       color: rgb(255, 255, 255);
     }
   }
-
   .eurocafe {
     display: block;
     grid-area: eurocafe;
@@ -312,10 +298,8 @@ footer {
   }
   .eurocafe a img {
     width: 80vw;
-
     padding: 20px;
   }
-
   .grano1 {
     display: none;
   }
@@ -334,8 +318,6 @@ footer {
     display: none;
   }
 }
-
-
 @media screen and (min-width: 420px) and (max-width: 576px) {
   header {
     height: 22vh;
@@ -363,10 +345,7 @@ footer {
   }
   main {
     display: grid;
-    grid-template-areas:
-      "cafes cafes"
-      "eurocafe eurocafe"
-      "pilao pilao";
+    grid-template-areas: "cafes cafes" "eurocafe eurocafe" "pilao pilao";
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 3fr 3fr;
     justify-items: center;
@@ -388,16 +367,11 @@ footer {
       text-shadow: 0 0 10px rgb(37, 12, 1);
       color: #000;
     }
-
     100% {
-      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
-        0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1),
-        0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
-
+      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1), 0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
       color: rgb(255, 255, 255);
     }
   }
-
   .eurocafe {
     display: block;
     grid-area: eurocafe;
@@ -407,10 +381,8 @@ footer {
   }
   .eurocafe a img {
     width: 80vw;
-
     padding: 20px;
   }
-
   .grano1 {
     display: none;
   }
@@ -454,10 +426,7 @@ footer {
   }
   main {
     display: grid;
-    grid-template-areas:
-      "cafes cafes"
-      "eurocafe eurocafe"
-      "pilao pilao";
+    grid-template-areas: "cafes cafes" "eurocafe eurocafe" "pilao pilao";
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 3fr 3fr;
     justify-items: center;
@@ -469,7 +438,7 @@ footer {
     grid-area: cafes;
     margin: 40px;
   }
-  .nuestros-cafes h2 {
+  h2 {
     font-size: 400%;
     animation: cafes 5s ease infinite;
     letter-spacing: 6px;
@@ -479,16 +448,11 @@ footer {
       text-shadow: 0 0 10px rgb(37, 12, 1);
       color: #000;
     }
-
     100% {
-      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
-        0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1),
-        0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
-
+      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1), 0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
       color: rgb(255, 255, 255);
     }
   }
-
   .eurocafe {
     display: block;
     grid-area: eurocafe;
@@ -504,14 +468,12 @@ footer {
     margin-bottom: 200px;
     padding: 20px;
   }
-
   .grano1 {
     display: none;
   }
   .pilao {
     grid-area: pilao;
   }
-
   .pilao a img {
     width: 50vw;
     height: 150px;
@@ -522,10 +484,8 @@ footer {
   .grano2 {
     display: none;
   }
-  
 }
-
-@media screen and (min-width:768px) and (max-width: 996px){
+@media screen and (min-width: 768px) and (max-width: 996px) {
   header {
     height: 20vh;
     width: 100vw;
@@ -550,10 +510,7 @@ footer {
   }
   main {
     display: grid;
-    grid-template-areas:
-      "cafes cafes"
-      "eurocafe eurocafe"
-      "pilao pilao";
+    grid-template-areas: "cafes cafes" "eurocafe eurocafe" "pilao pilao";
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 3fr 3fr;
     justify-items: center;
@@ -575,16 +532,11 @@ footer {
       text-shadow: 0 0 10px rgb(37, 12, 1);
       color: #000;
     }
-
     100% {
-      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1),
-        0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1),
-        0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
-
+      text-shadow: 0 0 10px rgb(37, 12, 1), 0 0 20px rgb(37, 12, 1), 0 0 40px rgb(37, 12, 1), 0 0 80px rgb(37, 12, 1), 0 0 120px rgb(37, 12, 1), 0 0 160px rgb(37, 12, 1);
       color: rgb(255, 255, 255);
     }
   }
-
   .eurocafe {
     display: block;
     grid-area: eurocafe;
@@ -600,38 +552,31 @@ footer {
     margin-bottom: 120px;
     padding: 20px;
   }
-
-  .grano1 {
+  .eurocafe .grano1 {
     display: none;
   }
-  .pilao {
+  .eurocafe .pilao {
     grid-area: pilao;
   }
-
-  .pilao a img {
+  .eurocafe .pilao a img {
     width: 50vw;
     height: 150px;
     margin-bottom: 40px;
     position: relative;
     top: -220px;
   }
-  .grano2 {
+  .eurocafe .grano2 {
     display: none;
   }
-  
 }
 @media screen and (min-width: 996px) and (max-width: 1200px) {
-  
   nav {
     margin-top: 20px;
-
   }
- 
   .logo {
     margin-top: 20px;
-    
   }
-  .eurocafe{
+  .eurocafe {
     display: flex;
     justify-content: space-evenly;
   }
@@ -642,15 +587,13 @@ footer {
   .eurocafe a img {
     height: 60%;
   }
-  .pilao{
+  .pilao {
     display: flex;
     justify-content: space-evenly;
   }
- 
-
-
   .grano2 {
     width: 40%;
   }
-  
 }
+
+/*# sourceMappingURL=cof_style.css.map */

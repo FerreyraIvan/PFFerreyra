@@ -1,0 +1,138 @@
+// base
+@import '../../../scss/base/extends';
+@import '../../../scss/base/variables';
+  
+
+// componentes
+@import '../../../scss/components/footer';
+@import './components/ab_nav.scss';
+
+* {
+    @extend %reset;
+    font-family: "Bebas Neue", cursive;
+}
+body{
+    background-image: url(../imgs/background1.png);
+    background-image: cover;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 2% 0px 0px 10%;
+    .logo{
+        margin-right: auto;
+        padding: 0;
+        height: 125px;
+        width: 125px;
+        cursor: pointer;
+    }
+}
+// MAIN
+
+.about-calidad{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+}
+.about-h2 {
+        margin-left: 200px;
+        font-size: 400%;
+        letter-spacing: 5px;
+        line-height: 120px;
+        color: rgb(0, 0, 0);
+        span{
+            font-family: "Great Vibes", cursive;
+            font-weight: 800;
+            color: rgb(0, 0, 0);
+            background: linear-gradient(to right, hsla(0, 0%, 0%, 0.918) 0, hsla(0, 0%, 0%, 0.836) 10%, hsla(0, 0%, 0%, 0.658) 20%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: simple 2.5s linear infinite;
+        }
+      }
+.about-contenido {
+      width: 100vw;
+      height: 60vh;
+      background-color: rgba(255, 255, 255, 0.164);
+      display: flex;
+      justify-content: space-around;
+ }
+
+
+.about-contenido-h3-p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    height: 40vh;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+        font-size: 5em;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+      }
+    p {
+        font-size: 1.5em;
+        font-weight: 800;
+      } 
+  }
+.about-img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      img{
+          max-height: 50vh;
+          margin-right: 50px;
+          border-radius: 40%;
+      }
+} 
+    
+    @keyframes simple{
+    0%{
+      background-position: 0;
+    }
+    10%{
+      text-shadow: 0 0 5px #000;
+      font-size: 110%;
+      
+      
+    }
+    20%{
+      text-shadow: 0 0 10px #000;
+      font-size: 120%;
+    }
+    30%{
+      text-shadow: 0 0 15px #000;
+    }
+    40%{
+      text-shadow: 0 0 20px #000;
+    }
+    50%{
+      text-shadow: 0 0 25px #000;
+      background-position: 150px;
+    }
+    60%{
+      text-shadow: 0 0 30px #000;
+    }
+    70%{
+      text-shadow: 0 0 35px #000;
+    }
+    80%{
+      text-shadow: 0 0 40px #000;
+    }
+    90%{
+      text-shadow: 0 0 45px #000;
+    }
+    100%{
+      text-shadow: 0 0 50px #000;
+      background-position: 380px;
+    }
+  }
+  

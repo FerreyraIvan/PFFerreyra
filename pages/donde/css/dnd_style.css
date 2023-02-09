@@ -230,7 +230,7 @@ header {
     left: 0px;
   }
   nav {
-    position: relative;
+    position: absolute;
     top: 60px;
     display: flex;
     margin-top: 20px;
